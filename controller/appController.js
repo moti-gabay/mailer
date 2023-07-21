@@ -48,8 +48,8 @@ const getbill = (req, res) => {
   let config = {
     service: "gmail",
     auth: {
-      user: EMAIL,
-      pass: PASS,
+      user: confige.EMAIL,
+      pass:confige.PASS,
     },
   };
 
@@ -83,7 +83,7 @@ const getbill = (req, res) => {
   let mail = MailGenerator.generate(response);
 
   let message = {
-    from: process.env.EMAIL,
+    from: confige.EMAIL,
     to: email,
     subject: "place Order",
     html: mail,
