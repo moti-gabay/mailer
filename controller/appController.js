@@ -43,7 +43,7 @@ const singup = async (req, res) => {
 // send mail from real email account
 const getbill = (req, res) => {
   console.log("get bill");
-  const { email } = req.params.email;
+  const { email } = req.body;
 
   let config = {
     service: "gmail",
