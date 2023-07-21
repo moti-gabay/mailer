@@ -2,6 +2,6 @@ require("dotenv").config();
 
 exports.confige = {
     PORT:process.env.PORT,
-USER:process.env.USER,
+    EMAIL:process.env.EMAIL,
 PASS:process.env.PASS
 }
