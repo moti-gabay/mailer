@@ -83,7 +83,7 @@ const getbill = (req, res) => {
   let mail = MailGenerator.generate(response);
 
   let message = {
-    from: "aandmwoodshop23@gmail.com",
+    from: confige.EMAIL,
     to: email,
     subject: "place Order",
     html: mail,
