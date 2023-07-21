@@ -90,14 +90,15 @@ const getbill = (req, res) => {
   };
 
   transporter.sendMail(message).then(() => {
-    return res
+    try {
+      return res
       .status(201)
       .json({
         msg: "you should received an email ",
       })
-      // .catch((error) => {
-      //   return res.status(500).json({ error });
-      // });
+    } catch (error) {
+      return res.status(500).json({ error });
+    }
   });
   // res.status(201).json("getbill success");
 };
