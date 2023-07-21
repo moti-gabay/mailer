@@ -95,9 +95,9 @@ const getbill = (req, res) => {
       .json({
         msg: "you should received an email ",
       })
-      .catch((error) => {
-        return res.status(500).json({ error });
-      });
+      // .catch((error) => {
+      //   return res.status(500).json({ error });
+      // });
   });
   // res.status(201).json("getbill success");
 };
