@@ -1,4 +1,6 @@
 module.exports = {
-    EMAIL : "motigabay18@gmail.com",
-    PASS : "fpoypfdvwytgtxyi"
+    EMAIL : "aandmwoodshop23@gmail.com",
+    PASS:"axeeeurnihpjjsnm"
+    //moti18 -->
+    // PASS : "fpoypfdvwytgtxyi"
 }

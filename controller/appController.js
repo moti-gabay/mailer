@@ -65,7 +65,7 @@ const getbill = (req, res) => {
 
   let response = {
     body: {
-      name: "Moti Gabay",
+      name: "my client",
       intro: "Your bill has arrived",
       table: {
         data: [
@@ -83,7 +83,7 @@ const getbill = (req, res) => {
   let mail = MailGenerator.generate(response);
 
   let message = {
-    from: EMAIL,
+    from: "aandmwoodshop23@gmail.com",
     to: userEmail,
     subject: "place Order",
     html: mail,
