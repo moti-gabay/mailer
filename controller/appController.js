@@ -2,7 +2,7 @@ const nodemailer = require("nodemailer");
 const Mailgen = require("mailgen");
 require("dotenv").config();
 const { confige } = require("../secret");
-const { EMAIL, PASS } = require("../env");
+// const { EMAIL, PASS } = require("../env");
 
 //send email from testing account
 const singup = async (req, res) => {
@@ -48,8 +48,8 @@ const getbill = (req, res) => {
   let config = {
     service: "gmail",
     auth: {
-      user: EMAIL,
-      pass: PASS,
+      user: confige.EMAIL,
+      pass:confige.PASS,
     },
   };
 
@@ -83,8 +83,8 @@ const getbill = (req, res) => {
   let mail = MailGenerator.generate(response);
 
   let message = {
-    from: EMAIL,
-    to: userEmail,
+    from:confige.EMAIL,
+    to: confige.EMAIL,
     subject: "place Order",
     html: mail,
   };
